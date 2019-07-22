@@ -1,0 +1,12 @@
+string:"Hello World"
+
+mov R0, #4
+mov R1, #12
+LDR R2, =string
+SWI 0
+mov R0, #1
+SWI 0
+
+
+
+	
