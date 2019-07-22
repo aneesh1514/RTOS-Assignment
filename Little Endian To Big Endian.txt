@@ -1,0 +1,12 @@
+#include<stdio.h>
+int little_to_Big(int x);
+int main()
+{
+int x=0xDDCCBBAA;
+printf("The Big Endian= 0x%X\n",little_to_Big(x));
+return 0;
+}
+int little_to_Big(int x)
+{
+return(((x>>24)&(0x000000ff))|((x>>8)&(0x0000ff00))|((x<<8)&(0x00ff0000))|((x<<24)&(0xff000000)));
+}
