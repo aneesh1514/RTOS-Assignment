@@ -9,4 +9,9 @@ SWI 0
 
 
 
+The swap function can be written in one cycle in arm 
+
+swp r2,r0,[r1]
+
+
 	
